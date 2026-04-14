@@ -2,82 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dark Horse Law Firm</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Dark Horse Law Firm</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#marathi">मराठी</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Corporate Law</li>
-                <li>Family Law</li>
-                <li>Criminal Defense</li>
-                <li>Real Estate Law</li>
-                <li>Intellectual Property</li>
-            </ul>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Dark Horse Law Firm is dedicated to providing top-notch legal services with a personalized touch. Our team of experienced attorneys is here to help you navigate the complexities of the legal system.</p>
-        </section>
-        <section id="team">
-            <h2>Our Team</h2>
-            <div class="team-member">
-                <h3>John Doe</h3>
-                <p>Email: johndoe@darkhorselaw.com</p>
-                <p>Phone: (123) 456-7890</p>
-            </div>
-            <div class="team-member">
-                <h3>Jane Smith</h3>
-                <p>Email: janesmith@darkhorselaw.com</p>
-                <p>Phone: (123) 456-7891</p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, please feel free to reach out to us!</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-        <section id="marathi" style="display: none;">
-            <h2>डार्क हॉर्स लॉ फर्म</h2>
-            <p>आमचं कार्यक्षेत्र आणि कायद्यातील अनुभव तुमचं सहाय्य करण्यासाठी सदैव तत्पर आहे.</p>
-            <!-- Other Marathi content would go here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Dark Horse Law Firm</p>
-    </footer>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #000000, #1c1c1c);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            background: linear-gradient(135deg, #000000, #333);
+            color: #f8c146;
+        }
+
+        .services-section {
+            background: linear-gradient(to right, #f9f9f9, #eef1f5);
+        }
+
+        .navbar-brand {
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        .btn-outline-light:hover {
+            background: #f8c146;
+            color: black;
+            border-color: #f8c146;
+        }
+
+        footer {
+            background: #000;
+            color: #aaa;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
     <script>
-        // Add logic to switch between English and Marathi
-        document.querySelector('a[href="#marathi"]').addEventListener('click', function () {
-            document.getElementById('marathi').style.display = 'block';
-            document.getElementById('services').style.display = 'none';
-            document.getElementById('about').style.display = 'none';
-            document.getElementById('team').style.display = 'none';
-            document.getElementById('contact').style.display = 'none';
-        });
+        function switchLanguage(lang) {
+            document.querySelectorAll('.multilingual').forEach(el => {
+                el.style.display = (el.getAttribute('data-lang') === lang) ? 'block' : 'none';
+            });
+        }
+
+        window.onload = () => switchLanguage('en');
     </script>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand fw-bold" href="#">⚖️ Dark Horse Law Firm</a>
+        <div>
+            <button class="btn btn-outline-light btn-sm me-2" onclick="switchLanguage('en')">English</button>
+            <button class="btn btn-outline-light btn-sm" onclick="switchLanguage('mr')">मराठी</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1>Expert Legal Solutions in Land & Real Estate</h1>
+        <p>Your trusted partner for documentation & approvals</p>
+    </div>
+</section>
+
+<!-- ENGLISH -->
+<div class="multilingual" data-lang="en">
+
+<section class="container py-5">
+    <h2 class="text-center section-title">About Us</h2>
+    <p class="text-center">
+        We are a dedicated legal and consultancy service provider specializing in land and real estate matters handled outside the court system. 
+        We assist individuals, developers, and businesses with property documentation, approvals, and compliance.
+    </p>
+</section>
+
+<section class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Our Services</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4"><div class="card p-3">NA Conversion & Zone Change</div></div>
+            <div class="col-md-4"><div class="card p-3">Title Search & Legal Opinion</div></div>
+            <div class="col-md-4"><div class="card p-3">7/12, 8A Extracts & Mutation</div></div>
+            <div class="col-md-4"><div class="card p-3">Layout Approval & Plotting</div></div>
+            <div class="col-md-4"><div class="card p-3">Sale Deed & Agreements</div></div>
+            <div class="col-md-4"><div class="card p-3">Power of Attorney & Gift Deed</div></div>
+            <div class="col-md-4"><div class="card p-3">RERA Registration</div></div>
+            <div class="col-md-4"><div class="card p-3">Bank Loan Verification</div></div>
+            <div class="col-md-4"><div class="card p-3">Land Acquisition & JV</div></div>
+
+        </div>
+    </div>
+</section>
+
+<section class="container py-5">
+    <h2 class="text-center section-title">Our Team</h2>
+    <div class="row text-center">
+        <div class="col-md-4"><div class="card p-3">Sambhaji Shinde<br>7219892958</div></div>
+        <div class="col-md-4"><div class="card p-3">Akshay Patil<br>9552141272</div></div>
+        <div class="col-md-4"><div class="card p-3">Tejas Veer<br>9623907880</div></div>
+        <div class="col-md-4"><div class="card p-3">Pranay Jadhav<br>9890132646</div></div>
+        <div class="col-md-4"><div class="card p-3">Abhishek Khot<br>9960661657</div></div>
+    </div>
+</section>
+
+</div>
+
+<!-- MARATHI -->
+<div class="multilingual" data-lang="mr" style="display:none;">
+
+<section class="container py-5">
+    <h2 class="text-center section-title">आमच्याबद्दल</h2>
+    <p class="text-center">
+        आम्ही एक समर्पित कायदेशीर आणि सल्ला सेवा प्रदाता आहोत जे जमीन आणि रिअल इस्टेट विषयात तज्ञ आहेत.
+    </p>
+</section>
+
+<section class="services-section py-5">
+    <div class="container">
+        <h2 class="text-center section-title">आमच्या सेवा</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4"><div class="card p-3">NA रूपांतरण व झोन बदल</div></div>
+            <div class="col-md-4"><div class="card p-3">टायटल सर्च व लीगल ओपिनियन</div></div>
+            <div class="col-md-4"><div class="card p-3">7/12, 8A व फेरफार</div></div>
+            <div class="col-md-4"><div class="card p-3">लेआउट मंजुरी व प्लॉटिंग</div></div>
+            <div class="col-md-4"><div class="card p-3">सेल डीड व करार</div></div>
+            <div class="col-md-4"><div class="card p-3">पॉवर ऑफ अटर्नी व गिफ्ट डीड</div></div>
+            <div class="col-md-4"><div class="card p-3">RERA नोंदणी</div></div>
+            <div class="col-md-4"><div class="card p-3">बँक लोन तपासणी</div></div>
+            <div class="col-md-4"><div class="card p-3">जमीन अधिग्रहण व JV</div></div>
+
+        </div>
+    </div>
+</section>
+
+<section class="container py-5">
+    <h2 class="text-center section-title">आमचा संघ</h2>
+    <div class="row text-center">
+        <div class="col-md-4"><div class="card p-3">संभाजी शिंदे<br>7219892958</div></div>
+        <div class="col-md-4"><div class="card p-3">अक्षय पाटील<br>9552141272</div></div>
+        <div class="col-md-4"><div class="card p-3">तेजस वीर<br>9623907880</div></div>
+        <div class="col-md-4"><div class="card p-3">प्रणय जाधव<br>9890132646</div></div>
+        <div class="col-md-4"><div class="card p-3">अभिषेक खोत<br>9960661657</div></div>
+    </div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Dark Horse Law Firm | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
