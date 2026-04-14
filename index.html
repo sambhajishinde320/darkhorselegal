@@ -1,192 +1,1202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dark Horse Law Firm</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ===== PRIMARY SEO ===== -->
+  <title>Dark Horse Law Firm | Land & Real Estate Legal Services – Aurangabad, Maharashtra</title>
+  <meta name="description" content="Dark Horse Law Firm specializes in land and real estate legal services in Aurangabad, Maharashtra. NA conversion, title search, RERA registration, sale deed, layout approvals and more.">
+  <meta name="keywords" content="law firm Aurangabad, real estate lawyer Maharashtra, NA conversion, title search, RERA registration, land legal services, property lawyer Aurangabad, 7/12 extract, sale deed, layout approval">
+  <meta name="author" content="Dark Horse Law Firm">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourusername.github.io/dark-horse-law/">
 
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f8f9fa;
-        }
+  <!-- ===== OPEN GRAPH (WhatsApp, LinkedIn previews) ===== -->
+  <meta property="og:title" content="Dark Horse Law Firm | Real Estate & Land Legal Experts">
+  <meta property="og:description" content="Trusted legal consultancy for land, real estate, NA conversion, RERA, title search & more in Aurangabad, Maharashtra.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/dark-horse-law/">
+  <meta property="og:locale" content="en_IN">
 
-        .hero {
-            background: linear-gradient(135deg, #000000, #1c1c1c);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
+  <!-- ===== STRUCTURED DATA (Google Rich Results) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Dark Horse Law Firm",
+    "description": "Legal and consultancy services specializing in land and real estate matters including NA conversion, title search, RERA registration, layout approval and documentation.",
+    "url": "https://yourusername.github.io/dark-horse-law/",
+    "areaServed": {
+      "@type": "State",
+      "name": "Maharashtra"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Aurangabad",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "telephone": "+917219892958",
+    "employee": [
+      {"@type": "Person", "name": "Sambhaji Shinde", "telephone": "+917219892958"},
+      {"@type": "Person", "name": "Akshay Patil", "telephone": "+919552141272"},
+      {"@type": "Person", "name": "Tejas Veer", "telephone": "+919623907880"},
+      {"@type": "Person", "name": "Pranay Jadhav", "telephone": "+919890132646"},
+      {"@type": "Person", "name": "Abhishek Khot", "telephone": "+919960661657"}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Legal Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "NA Conversion & Zone Change"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Title Search & Legal Opinion"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "RERA Registration"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Layout Approval & Plotting"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sale Deed & Agreements"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Land Acquisition & JV"}}
+      ]
+    }
+  }
+  </script>
 
-        .section-title {
-            margin-bottom: 40px;
-            font-weight: 700;
-            color: #222;
-        }
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-        .card {
-            border: none;
-            border-radius: 12px;
-            background: white;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            background: linear-gradient(135deg, #000000, #333);
-            color: #f8c146;
-        }
+    :root {
+      --gold: #c9a84c;
+      --gold-light: #f0d080;
+      --gold-pale: #fdf6e3;
+      --dark: #0d0d0d;
+      --dark2: #1a1a1a;
+      --dark3: #262626;
+      --text-light: #e8e4d8;
+      --text-muted: #999;
+      --white: #ffffff;
+      --section-pad: 90px 0;
+    }
 
-        .services-section {
-            background: linear-gradient(to right, #f9f9f9, #eef1f5);
-        }
+    html { scroll-behavior: smooth; }
 
-        .navbar-brand {
-            font-size: 22px;
-            letter-spacing: 1px;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fafaf8;
+      color: #1a1a1a;
+      font-size: 16px;
+      line-height: 1.7;
+    }
 
-        .btn-outline-light:hover {
-            background: #f8c146;
-            color: black;
-            border-color: #f8c146;
-        }
+    /* ===== NAVBAR ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(10,10,10,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
 
-        footer {
-            background: #000;
-            color: #aaa;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      text-decoration: none;
+    }
 
-    <script>
-        function switchLanguage(lang) {
-            document.querySelectorAll('.multilingual').forEach(el => {
-                el.style.display = (el.getAttribute('data-lang') === lang) ? 'block' : 'none';
-            });
-        }
+    .nav-brand .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
 
-        window.onload = () => switchLanguage('en');
-    </script>
+    .nav-links { display: flex; align-items: center; gap: 6px; }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+
+    .lang-btn {
+      background: transparent;
+      border: 1px solid rgba(201,168,76,0.5);
+      color: var(--gold);
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      background: var(--dark);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 120px 5% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Background pattern */
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 50%, rgba(201,168,76,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(201,168,76,0.06) 0%, transparent 40%),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 59px,
+          rgba(201,168,76,0.04) 59px,
+          rgba(201,168,76,0.04) 60px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 59px,
+          rgba(201,168,76,0.04) 59px,
+          rgba(201,168,76,0.04) 60px
+        );
+    }
+
+    /* Decorative scales of justice SVG */
+    .hero-bg-icon {
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.04;
+      width: 380px;
+      height: 380px;
+    }
+
+    .hero-inner { position: relative; z-index: 1; max-width: 780px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 6vw, 68px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span { color: var(--gold); }
+
+    .hero p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      max-width: 560px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 14px 30px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.4); }
+
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 13px 30px;
+      border-radius: 8px;
+      border: 1.5px solid rgba(201,168,76,0.5);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    .btn-outline-gold:hover { border-color: var(--gold); background: rgba(201,168,76,0.08); }
+
+    .hero-stats {
+      display: flex; justify-content: center; gap: 48px;
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      flex-wrap: wrap;
+    }
+
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 6px; letter-spacing: 0.5px; }
+
+    /* ===== SECTION COMMONS ===== */
+    section { padding: var(--section-pad); }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: #666;
+      max-width: 560px;
+    }
+
+    .section-head { margin-bottom: 56px; }
+
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 5%; }
+
+    /* ===== ABOUT ===== */
+    .about-section { background: #fff; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-card-main {
+      background: var(--dark);
+      border-radius: 20px;
+      padding: 48px 40px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card-main::before {
+      content: '';
+      position: absolute; top: -60px; right: -60px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(201,168,76,0.15), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .about-card-main h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .about-card-main p { color: rgba(255,255,255,0.65); line-height: 1.8; }
+
+    .about-badge-float {
+      position: absolute; bottom: -20px; right: -20px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 13px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(201,168,76,0.35);
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .about-content p { color: #444; margin-bottom: 20px; line-height: 1.8; }
+
+    .about-points { list-style: none; margin: 28px 0; }
+
+    .about-points li {
+      display: flex; align-items: flex-start; gap: 12px;
+      margin-bottom: 16px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .check-icon {
+      width: 22px; height: 22px; min-width: 22px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px;
+      color: var(--dark);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    /* ===== SERVICES ===== */
+    .services-section {
+      background: linear-gradient(180deg, #f5f3ee 0%, #fafaf8 100%);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 16px;
+      padding: 28px 24px;
+      transition: all 0.25s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      border-color: rgba(201,168,76,0.3);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
+    }
+
+    .service-card:hover::after { transform: scaleX(1); }
+
+    .service-icon {
+      width: 48px; height: 48px;
+      background: var(--gold-pale);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .service-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.6;
+    }
+
+    /* ===== TEAM ===== */
+    .team-section { background: #fff; }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    .team-card {
+      text-align: center;
+      background: #fafaf8;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 16px;
+      padding: 28px 16px 24px;
+      transition: all 0.25s;
+    }
+
+    .team-card:hover {
+      background: var(--dark);
+      border-color: var(--dark);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+    }
+
+    .team-card:hover .team-name { color: var(--white); }
+    .team-card:hover .team-phone { color: var(--gold); }
+
+    .team-avatar {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 0 auto 16px;
+    }
+
+    .team-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 6px;
+      transition: color 0.25s;
+    }
+
+    .team-phone {
+      font-size: 13px;
+      color: #888;
+      transition: color 0.25s;
+      font-weight: 500;
+    }
+
+    /* ===== WHY US ===== */
+    .why-section {
+      background: var(--dark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 10% 90%, rgba(201,168,76,0.07) 0%, transparent 50%),
+        radial-gradient(circle at 90% 10%, rgba(201,168,76,0.05) 0%, transparent 50%),
+        repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(201,168,76,0.015) 40px, rgba(201,168,76,0.015) 41px);
+    }
+
+    .why-section .section-title { color: var(--white); }
+    .why-section .section-subtitle { color: rgba(255,255,255,0.5); }
+    .why-section .section-label { color: var(--gold); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+
+    .why-card {
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 16px;
+      padding: 32px 24px;
+      transition: all 0.25s;
+    }
+
+    .why-card:hover {
+      background: rgba(201,168,76,0.06);
+      border-color: rgba(201,168,76,0.4);
+    }
+
+    .why-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 800;
+      color: rgba(201,168,76,0.2);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .why-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .why-card p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.7; }
+
+    /* ===== CONTACT ===== */
+    .contact-section { background: #fff; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+
+    .contact-info p { color: #666; margin-bottom: 32px; }
+
+    .contact-item {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 20px;
+      padding: 16px 20px;
+      background: #fafaf8;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 12px;
+    }
+
+    .contact-icon {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+
+    .contact-item-text .label { font-size: 11px; color: #999; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+    .contact-item-text .value { font-size: 15px; color: var(--dark); font-weight: 600; margin-top: 2px; }
+
+    .contact-form-card {
+      background: var(--dark);
+      border-radius: 20px;
+      padding: 40px;
+    }
+
+    .contact-form-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .contact-form-card p { font-size: 14px; color: rgba(255,255,255,0.45); margin-bottom: 28px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    .form-group { margin-bottom: 16px; }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: var(--white);
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(255,255,255,0.2); }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: rgba(201,168,76,0.5);
+    }
+
+    .form-group select option { background: var(--dark2); color: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      padding: 48px 5%;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--white);
+      display: flex; align-items: center; gap: 10px;
+    }
+
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.3); }
+
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+
+    /* ===== MULTILINGUAL ===== */
+    .multilingual[data-lang] { display: none; }
+    .multilingual.active { display: block; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .team-grid { grid-template-columns: repeat(3, 1fr); }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .about-badge-float { position: static; margin-top: 20px; display: inline-block; }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid, .why-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .nav-links a:not(.lang-btn) { display: none; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container d-flex justify-content-between">
-        <a class="navbar-brand fw-bold" href="#">⚖️ Dark Horse Law Firm</a>
-        <div>
-            <button class="btn btn-outline-light btn-sm me-2" onclick="switchLanguage('en')">English</button>
-            <button class="btn btn-outline-light btn-sm" onclick="switchLanguage('mr')">मराठी</button>
-        </div>
-    </div>
+<!-- NAVBAR -->
+<nav>
+  <a class="nav-brand" href="#">
+    <div class="logo-icon">⚖️</div>
+    Dark Horse Law Firm
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+    <button class="lang-btn active" onclick="switchLang('en')" id="btn-en">EN</button>
+    <button class="lang-btn" onclick="switchLang('mr')" id="btn-mr">मराठी</button>
+  </div>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <h1>Expert Legal Solutions in Land & Real Estate</h1>
-        <p>Your trusted partner for documentation & approvals</p>
-    </div>
-</section>
+<!-- ===================== ENGLISH ===================== -->
+<div class="multilingual active" data-lang="en">
 
-<!-- ENGLISH -->
-<div class="multilingual" data-lang="en">
-
-<section class="container py-5">
-    <h2 class="text-center section-title">About Us</h2>
-    <p class="text-center">
-        We are a dedicated legal and consultancy service provider specializing in land and real estate matters handled outside the court system. 
-        We assist individuals, developers, and businesses with property documentation, approvals, and compliance.
-    </p>
-</section>
-
-<section class="services-section py-5">
-    <div class="container">
-        <h2 class="text-center section-title">Our Services</h2>
-        <div class="row g-4">
-
-            <div class="col-md-4"><div class="card p-3">NA Conversion & Zone Change</div></div>
-            <div class="col-md-4"><div class="card p-3">Title Search & Legal Opinion</div></div>
-            <div class="col-md-4"><div class="card p-3">7/12, 8A Extracts & Mutation</div></div>
-            <div class="col-md-4"><div class="card p-3">Layout Approval & Plotting</div></div>
-            <div class="col-md-4"><div class="card p-3">Sale Deed & Agreements</div></div>
-            <div class="col-md-4"><div class="card p-3">Power of Attorney & Gift Deed</div></div>
-            <div class="col-md-4"><div class="card p-3">RERA Registration</div></div>
-            <div class="col-md-4"><div class="card p-3">Bank Loan Verification</div></div>
-            <div class="col-md-4"><div class="card p-3">Land Acquisition & JV</div></div>
-
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-bg-icon" viewBox="0 0 200 200" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <rect x="96" y="10" width="8" height="160" rx="4"/>
+      <rect x="20" y="22" width="160" height="8" rx="4"/>
+      <circle cx="40" cy="80" r="32" stroke="white" stroke-width="6" fill="none"/>
+      <circle cx="160" cy="80" r="32" stroke="white" stroke-width="6" fill="none"/>
+      <rect x="80" y="170" width="40" height="10" rx="4"/>
+      <rect x="60" y="178" width="80" height="8" rx="4"/>
+    </svg>
+    <div class="hero-inner">
+      <div class="hero-badge">⚖ Aurangabad, Maharashtra</div>
+      <h1>Expert Legal Solutions in<br><span>Land & Real Estate</span></h1>
+      <p>Your trusted partner for documentation, approvals, and compliance — handled outside the court system.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn-gold">Explore Services</a>
+        <a href="#contact" class="btn-outline-gold">Get Free Consultation</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">9+</div>
+          <div class="stat-label">Legal Services</div>
         </div>
+        <div class="stat-item">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Expert Advocates</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Out-of-Court Focus</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">MH</div>
+          <div class="stat-label">Maharashtra-wide</div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="container py-5">
-    <h2 class="text-center section-title">Our Team</h2>
-    <div class="row text-center">
-        <div class="col-md-4"><div class="card p-3">Sambhaji Shinde<br>7219892958</div></div>
-        <div class="col-md-4"><div class="card p-3">Akshay Patil<br>9552141272</div></div>
-        <div class="col-md-4"><div class="card p-3">Tejas Veer<br>9623907880</div></div>
-        <div class="col-md-4"><div class="card p-3">Pranay Jadhav<br>9890132646</div></div>
-        <div class="col-md-4"><div class="card p-3">Abhishek Khot<br>9960661657</div></div>
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-main">
+            <h3>Who We Are</h3>
+            <p>Dark Horse Law Firm is a dedicated legal and consultancy service provider based in Aurangabad, Maharashtra. We handle complex land and real estate matters efficiently, outside the court system.</p>
+            <br>
+            <p>From first-time property buyers to large developers, we simplify every legal step — from title verification to RERA compliance.</p>
+          </div>
+          <div class="about-badge-float">
+            ✓ Trusted<br>Legal Partner
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label">About the Firm</div>
+          <h2 class="section-title">Committed to Protecting Your Property Rights</h2>
+          <p>We specialize in all matters related to land records, real estate documentation, government approvals, and statutory compliance across Maharashtra.</p>
+          <ul class="about-points">
+            <li><div class="check-icon">✓</div> Deep expertise in Maharashtra land laws and revenue records</li>
+            <li><div class="check-icon">✓</div> End-to-end assistance from documentation to registration</li>
+            <li><div class="check-icon">✓</div> Transparent, timely and professional service delivery</li>
+            <li><div class="check-icon">✓</div> Dedicated team of 5 experienced legal professionals</li>
+          </ul>
+          <a href="#contact" class="btn-gold">Talk to an Expert</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Our Legal Services</h2>
+        <p class="section-subtitle">Comprehensive legal and documentation services for all your land and property needs in Maharashtra.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>NA Conversion & Zone Change</h3>
+          <p>Convert agricultural land to non-agricultural use and obtain zone change approvals from competent authorities.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>Title Search & Legal Opinion</h3>
+          <p>Thorough verification of property title history to ensure clear and marketable title before any transaction.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <h3>7/12, 8A Extracts & Mutation</h3>
+          <p>Obtain and verify revenue records including Satbara extracts, 8A records and property mutation entries.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <h3>Layout Approval & Plotting</h3>
+          <p>Complete assistance for town planning approvals, layout sanctions and plotting of land parcels.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📜</div>
+          <h3>Sale Deed & Agreements</h3>
+          <p>Drafting and registration of sale deeds, development agreements, MoUs and all property contracts.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✍️</div>
+          <h3>Power of Attorney & Gift Deed</h3>
+          <p>Preparation and registration of POA, gift deeds, partition deeds and family settlement documents.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏛️</div>
+          <h3>RERA Registration</h3>
+          <p>End-to-end RERA project and agent registration services ensuring full statutory compliance.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏦</div>
+          <h3>Bank Loan Verification</h3>
+          <p>Property legal verification reports for banks and financial institutions for home and mortgage loans.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Land Acquisition & JV</h3>
+          <p>Advisory and documentation for land acquisition, joint venture agreements and development deals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Why Choose Us</div>
+        <h2 class="section-title">The Dark Horse Advantage</h2>
+        <p class="section-subtitle">We combine deep local knowledge with professional rigor to deliver results that matter.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h3>Local Expertise</h3>
+          <p>Deep knowledge of Maharashtra revenue laws, district offices, and local authorities for faster approvals.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h3>Out-of-Court Focus</h3>
+          <p>We resolve matters efficiently without litigation, saving you time, money and stress.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h3>Transparent Process</h3>
+          <p>Clear communication at every step — no hidden charges, no surprises in documentation.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <h3>End-to-End Service</h3>
+          <p>From initial title search to final registration — we handle everything under one roof.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Our Professionals</div>
+        <h2 class="section-title">Meet the Team</h2>
+        <p class="section-subtitle">Reach out directly to any of our experts for a consultation.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">SS</div>
+          <div class="team-name">Sambhaji Shinde</div>
+          <div class="team-phone">72198 92958</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">AP</div>
+          <div class="team-name">Akshay Patil</div>
+          <div class="team-phone">95521 41272</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">TV</div>
+          <div class="team-name">Tejas Veer</div>
+          <div class="team-phone">96239 07880</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">PJ</div>
+          <div class="team-name">Pranay Jadhav</div>
+          <div class="team-phone">98901 32646</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">AK</div>
+          <div class="team-name">Abhishek Khot</div>
+          <div class="team-phone">99606 61657</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Have a property matter? Reach out for a free initial consultation.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>We're here to help</h3>
+          <p>Consult our experts on any land or real estate legal matter across Maharashtra.</p>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-item-text">
+              <div class="label">Location</div>
+              <div class="value">Aurangabad, Maharashtra</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-item-text">
+              <div class="label">Primary Contact</div>
+              <div class="value">+91 72198 92958</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⚖️</div>
+            <div class="contact-item-text">
+              <div class="label">Specialization</div>
+              <div class="value">Land & Real Estate Law</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <h3>Send an Enquiry</h3>
+          <p>We'll get back to you within 24 hours.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="Mobile number">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Service Required</label>
+            <select>
+              <option value="">Select a service...</option>
+              <option>NA Conversion & Zone Change</option>
+              <option>Title Search & Legal Opinion</option>
+              <option>7/12, 8A Extracts & Mutation</option>
+              <option>Layout Approval & Plotting</option>
+              <option>Sale Deed & Agreements</option>
+              <option>Power of Attorney & Gift Deed</option>
+              <option>RERA Registration</option>
+              <option>Bank Loan Verification</option>
+              <option>Land Acquisition & JV</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Brief Description</label>
+            <textarea placeholder="Describe your legal matter briefly..."></textarea>
+          </div>
+          <button class="btn-gold" style="width:100%; font-size:15px; padding:15px;">Send Enquiry</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
 
-<!-- MARATHI -->
-<div class="multilingual" data-lang="mr" style="display:none;">
+<!-- ===================== MARATHI ===================== -->
+<div class="multilingual" data-lang="mr">
 
-<section class="container py-5">
-    <h2 class="text-center section-title">आमच्याबद्दल</h2>
-    <p class="text-center">
-        आम्ही एक समर्पित कायदेशीर आणि सल्ला सेवा प्रदाता आहोत जे जमीन आणि रिअल इस्टेट विषयात तज्ञ आहेत.
-    </p>
-</section>
+  <section class="hero">
+    <svg class="hero-bg-icon" viewBox="0 0 200 200" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <rect x="96" y="10" width="8" height="160" rx="4"/>
+      <rect x="20" y="22" width="160" height="8" rx="4"/>
+      <circle cx="40" cy="80" r="32" stroke="white" stroke-width="6" fill="none"/>
+      <circle cx="160" cy="80" r="32" stroke="white" stroke-width="6" fill="none"/>
+      <rect x="80" y="170" width="40" height="10" rx="4"/>
+      <rect x="60" y="178" width="80" height="8" rx="4"/>
+    </svg>
+    <div class="hero-inner">
+      <div class="hero-badge">⚖ औरंगाबाद, महाराष्ट्र</div>
+      <h1>जमीन व रिअल इस्टेटमधील<br><span>तज्ञ कायदेशीर सेवा</span></h1>
+      <p>दस्तऐवजीकरण, मंजुरी आणि अनुपालनासाठी आपला विश्वासू भागीदार.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn-gold">आमच्या सेवा</a>
+        <a href="#contact" class="btn-outline-gold">मोफत सल्ला घ्या</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">९+</div><div class="stat-label">कायदेशीर सेवा</div></div>
+        <div class="stat-item"><div class="stat-num">५</div><div class="stat-label">तज्ञ वकील</div></div>
+        <div class="stat-item"><div class="stat-num">१००%</div><div class="stat-label">कोर्टाबाहेर</div></div>
+        <div class="stat-item"><div class="stat-num">MH</div><div class="stat-label">संपूर्ण महाराष्ट्र</div></div>
+      </div>
+    </div>
+  </section>
 
-<section class="services-section py-5">
+  <section class="about-section" id="about-mr">
     <div class="container">
-        <h2 class="text-center section-title">आमच्या सेवा</h2>
-        <div class="row g-4">
-
-            <div class="col-md-4"><div class="card p-3">NA रूपांतरण व झोन बदल</div></div>
-            <div class="col-md-4"><div class="card p-3">टायटल सर्च व लीगल ओपिनियन</div></div>
-            <div class="col-md-4"><div class="card p-3">7/12, 8A व फेरफार</div></div>
-            <div class="col-md-4"><div class="card p-3">लेआउट मंजुरी व प्लॉटिंग</div></div>
-            <div class="col-md-4"><div class="card p-3">सेल डीड व करार</div></div>
-            <div class="col-md-4"><div class="card p-3">पॉवर ऑफ अटर्नी व गिफ्ट डीड</div></div>
-            <div class="col-md-4"><div class="card p-3">RERA नोंदणी</div></div>
-            <div class="col-md-4"><div class="card p-3">बँक लोन तपासणी</div></div>
-            <div class="col-md-4"><div class="card p-3">जमीन अधिग्रहण व JV</div></div>
-
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-main">
+            <h3>आम्ही कोण आहोत</h3>
+            <p>डार्क हॉर्स लॉ फर्म ही औरंगाबाद, महाराष्ट्र येथील एक समर्पित कायदेशीर सल्ला सेवा संस्था आहे. आम्ही जमीन व रिअल इस्टेटशी संबंधित जटिल प्रकरणे कोर्टाबाहेर कार्यक्षमतेने हाताळतो.</p>
+          </div>
+          <div class="about-badge-float">✓ विश्वासू<br>कायदेशीर भागीदार</div>
         </div>
+        <div class="about-content">
+          <div class="section-label">आमच्याबद्दल</div>
+          <h2 class="section-title">आपल्या मालमत्तेच्या हक्कांचे संरक्षण</h2>
+          <p>महाराष्ट्रातील जमीन नोंदी, रिअल इस्टेट दस्तऐवजीकरण, सरकारी मंजुरी आणि वैधानिक अनुपालनात आम्ही तज्ञ आहोत.</p>
+          <ul class="about-points">
+            <li><div class="check-icon">✓</div> महाराष्ट्र जमीन कायदे आणि महसूल अभिलेखांचे सखोल ज्ञान</li>
+            <li><div class="check-icon">✓</div> दस्तऐवजीकरणापासून नोंदणीपर्यंत संपूर्ण सहाय्य</li>
+            <li><div class="check-icon">✓</div> पारदर्शक, वेळेवर आणि व्यावसायिक सेवा</li>
+            <li><div class="check-icon">✓</div> ५ अनुभवी कायदेशीर तज्ञांची समर्पित टीम</li>
+          </ul>
+          <a href="#contact-mr" class="btn-gold">तज्ञाशी बोला</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="container py-5">
-    <h2 class="text-center section-title">आमचा संघ</h2>
-    <div class="row text-center">
-        <div class="col-md-4"><div class="card p-3">संभाजी शिंदे<br>7219892958</div></div>
-        <div class="col-md-4"><div class="card p-3">अक्षय पाटील<br>9552141272</div></div>
-        <div class="col-md-4"><div class="card p-3">तेजस वीर<br>9623907880</div></div>
-        <div class="col-md-4"><div class="card p-3">प्रणय जाधव<br>9890132646</div></div>
-        <div class="col-md-4"><div class="card p-3">अभिषेक खोत<br>9960661657</div></div>
+  <section class="services-section" id="services-mr">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">आमच्या सेवा</div>
+        <h2 class="section-title">कायदेशीर सेवा</h2>
+        <p class="section-subtitle">महाराष्ट्रातील आपल्या सर्व जमीन व मालमत्तेच्या गरजांसाठी सर्वसमावेशक सेवा.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon">🏗️</div><h3>NA रूपांतरण व झोन बदल</h3><p>शेतजमीन अकृषिक वापरात रूपांतरित करण्यासाठी आणि झोन बदलाच्या मंजुरीसाठी सहाय्य.</p></div>
+        <div class="service-card"><div class="service-icon">🔍</div><h3>टायटल सर्च व लीगल ओपिनियन</h3><p>व्यवहारापूर्वी मालमत्तेचा इतिहास तपासण्यासाठी सखोल शीर्षक सत्यापन.</p></div>
+        <div class="service-card"><div class="service-icon">📋</div><h3>७/१२, ८A व फेरफार</h3><p>सातबारा उतारा, ८A नोंदी आणि मालमत्ता फेरफार नोंदी मिळविणे व सत्यापित करणे.</p></div>
+        <div class="service-card"><div class="service-icon">📐</div><h3>लेआउट मंजुरी व प्लॉटिंग</h3><p>टाउन प्लानिंग मंजुरी, लेआउट मंजुरी आणि जमीन भूखंडासाठी संपूर्ण सहाय्य.</p></div>
+        <div class="service-card"><div class="service-icon">📜</div><h3>सेल डीड व करार</h3><p>विक्री करार, विकास करार आणि सर्व मालमत्ता दस्तऐवज तयार करणे व नोंदणी करणे.</p></div>
+        <div class="service-card"><div class="service-icon">✍️</div><h3>पॉवर ऑफ अटर्नी व गिफ्ट डीड</h3><p>मुखत्यारपत्र, बक्षीसपत्र, वाटणीपत्र आणि कौटुंबिक तडजोड दस्तऐवज.</p></div>
+        <div class="service-card"><div class="service-icon">🏛️</div><h3>RERA नोंदणी</h3><p>संपूर्ण RERA प्रकल्प व एजंट नोंदणी सेवा आणि वैधानिक अनुपालन.</p></div>
+        <div class="service-card"><div class="service-icon">🏦</div><h3>बँक लोन तपासणी</h3><p>गृहकर्ज आणि तारण कर्जासाठी बँकांना कायदेशीर सत्यापन अहवाल.</p></div>
+        <div class="service-card"><div class="service-icon">🤝</div><h3>जमीन अधिग्रहण व JV</h3><p>जमीन अधिग्रहण, संयुक्त उद्यम करार आणि विकास सौदे सल्ला व दस्तऐवजीकरण.</p></div>
+      </div>
     </div>
-</section>
+  </section>
+
+  <section class="why-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">आम्हाला का निवडावे</div>
+        <h2 class="section-title">डार्क हॉर्सचा फायदा</h2>
+        <p class="section-subtitle">स्थानिक ज्ञान आणि व्यावसायिकता यांचा संयोग.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="why-num">०१</div><h3>स्थानिक तज्ञता</h3><p>महाराष्ट्र महसूल कायदे, जिल्हाधिकारी कार्यालये यांचे सखोल ज्ञान.</p></div>
+        <div class="why-card"><div class="why-num">०२</div><h3>कोर्टाबाहेर निराकरण</h3><p>खटलाशिवाय प्रकरणे कार्यक्षमतेने सोडवतो — वेळ, पैसा आणि ताण वाचवतो.</p></div>
+        <div class="why-card"><div class="why-num">०३</div><h3>पारदर्शक प्रक्रिया</h3><p>प्रत्येक टप्प्यावर स्पष्ट संवाद — कोणतेही छुपे शुल्क नाही.</p></div>
+        <div class="why-card"><div class="why-num">०४</div><h3>संपूर्ण सेवा</h3><p>शीर्षक तपासणीपासून नोंदणीपर्यंत — सर्व काही एकाच छताखाली.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section" id="team-mr">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">आमचे तज्ञ</div>
+        <h2 class="section-title">आमचा संघ</h2>
+        <p class="section-subtitle">सल्लामसलतीसाठी थेट आमच्या कोणत्याही तज्ञाशी संपर्क करा.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card"><div class="team-avatar">सशि</div><div class="team-name">संभाजी शिंदे</div><div class="team-phone">72198 92958</div></div>
+        <div class="team-card"><div class="team-avatar">अपा</div><div class="team-name">अक्षय पाटील</div><div class="team-phone">95521 41272</div></div>
+        <div class="team-card"><div class="team-avatar">तवी</div><div class="team-name">तेजस वीर</div><div class="team-phone">96239 07880</div></div>
+        <div class="team-card"><div class="team-avatar">प्रजा</div><div class="team-name">प्रणय जाधव</div><div class="team-phone">98901 32646</div></div>
+        <div class="team-card"><div class="team-avatar">अखो</div><div class="team-name">अभिषेक खोत</div><div class="team-phone">99606 61657</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact-mr">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">संपर्क करा</div>
+        <h2 class="section-title">आमच्याशी संपर्क करा</h2>
+        <p class="section-subtitle">मालमत्तेशी संबंधित कोणतेही प्रकरण असल्यास मोफत सल्लामसलतीसाठी संपर्क करा.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>आम्ही मदतीसाठी येथे आहोत</h3>
+          <p>महाराष्ट्रातील कोणत्याही जमीन किंवा रिअल इस्टेट कायदेशीर प्रकरणासाठी आमच्या तज्ञांशी सल्लामसलत करा.</p>
+          <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-item-text"><div class="label">स्थान</div><div class="value">औरंगाबाद, महाराष्ट्र</div></div></div>
+          <div class="contact-item"><div class="contact-icon">📞</div><div class="contact-item-text"><div class="label">प्राथमिक संपर्क</div><div class="value">+91 72198 92958</div></div></div>
+          <div class="contact-item"><div class="contact-icon">⚖️</div><div class="contact-item-text"><div class="label">विशेषज्ञता</div><div class="value">जमीन व रिअल इस्टेट कायदा</div></div></div>
+        </div>
+        <div class="contact-form-card">
+          <h3>चौकशी पाठवा</h3>
+          <p>आम्ही २४ तासांत उत्तर देऊ.</p>
+          <div class="form-row">
+            <div class="form-group"><label>आपले नाव</label><input type="text" placeholder="पूर्ण नाव"></div>
+            <div class="form-group"><label>फोन</label><input type="tel" placeholder="मोबाइल नंबर"></div>
+          </div>
+          <div class="form-group">
+            <label>आवश्यक सेवा</label>
+            <select>
+              <option value="">सेवा निवडा...</option>
+              <option>NA रूपांतरण व झोन बदल</option>
+              <option>टायटल सर्च व लीगल ओपिनियन</option>
+              <option>७/१२, ८A व फेरफार</option>
+              <option>लेआउट मंजुरी व प्लॉटिंग</option>
+              <option>सेल डीड व करार</option>
+              <option>पॉवर ऑफ अटर्नी व गिफ्ट डीड</option>
+              <option>RERA नोंदणी</option>
+              <option>बँक लोन तपासणी</option>
+              <option>जमीन अधिग्रहण व JV</option>
+              <option>इतर</option>
+            </select>
+          </div>
+          <div class="form-group"><label>थोडक्यात वर्णन</label><textarea placeholder="आपले कायदेशीर प्रकरण थोडक्यात सांगा..."></textarea></div>
+          <button class="btn-gold" style="width:100%; font-size:15px; padding:15px;">चौकशी पाठवा</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Dark Horse Law Firm | All Rights Reserved</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div style="width:32px;height:32px;background:linear-gradient(135deg,#c9a84c,#f0d080);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;">⚖️</div>
+      Dark Horse Law Firm
+    </div>
+    <div class="footer-copy">© 2026 Dark Horse Law Firm · Aurangabad, Maharashtra · All Rights Reserved</div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 </footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.multilingual').forEach(el => {
+      el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+    });
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-mr').classList.toggle('active', lang === 'mr');
+  }
+
+  // Smooth scroll offset for fixed navbar
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) {
+        e.preventDefault();
+        window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
